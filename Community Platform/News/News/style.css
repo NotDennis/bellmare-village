@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+*{
+  box-sizing:border-box
+  }
+  body{
+    color:#262626;
+    font-size:25px;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.news-header{
+    color:white;
+    font-weight:bold;
+}
+h3{
+   padding:15px;
+   background: red;
+   width:237px;
+   font-weight:800;
+   font-size: 30px;
+   font-family: 'News Cycle', sans-serif;
+ 
+}
+.news-wrapper{
+    margin-left:400px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+}
+
+.news{
+	height:40px;
+    overflow:hidden;
+    font-family:'News Cycle', sans-serif;
+}
+.news > div span{
+	padding:5px 15px;
+	height:50px;
+	margin-bottom:30px;
+	display:block;
+
+
+}
+.news div:first-child{
+	animation: slide 10s linear infinite;
+
+}
+
+@keyframes slide{
+	0%{
+		margin-top: -240px;
+	}
+	5%{
+		margin-top: -160px;
+	}
+	35%{
+		margin-top: -160px;
+	}
+	40%{
+		margin-top: -80px;
+	}
+	65%{
+		margin-top: -80px;
+	}
+	70%{
+		margin-top: 0
+	}
+	99.99%{
+		margin-top: 0
+	}
+	100%{
+		margin-top: -240px
+	}
+
+}
+
+body {
+	line-height: 1;
+	font-family: Open Sans;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	width: 100%;
+}
+
+.container{
+	width: 1180px;
+	margin: 0 auto;
+	font-family: 'News Cycle', sans-serif;
+	font-size:18px;
+}
+.header{
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+.header .logo{
+	width: 200px;
+	margin: 25px auto;
+	margin-top:none;
+}
+.header .menu{
+	display: inline-block;
+	width: 100%;
+	background-color: #4D9BD0;
+	height: 50px;
+	line-height: 50px;
+	margin-top:-500px;
+}
+.header .menu ul{
+	display: flex;
+}
+.header .menu ul li{
+	flex: auto;
+	text-align: center;
+}
+.header .menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+}
+.header .menu ul li:hover{
+    background-color: #211174;
+}
+
+.menu2{
+    display: inline-block;
+	width: 100%;
+	background-color: #76A7D9;
+	height: 120px;
+	line-height: 50px;
+}
+
+.menu-text{
+    color:white;
+    font-family:'News Cycle', sans-serif;
+    font-size:60px;
+    text-align:center;
+    margin-top:15px;
+}
+.main-content{
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	margin-top: 25px;
+}
+.content-left{
+	width: 63%;
+	float: left;
+	display: inline-block;
+}
+.side-content{
+	width: 35%;
+    float: right;
+}
+
+.presentation{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+
+.image-slideshow{
+	position: absolute;
+	top: 40%;
+	z-index: 1000;
+	width: 100%;
+}
+.image-slideshow span{
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	cursor: pointer;
+}
+.image-slideshow span#next{
+	float: right;
+}
+.image-slideshow span#prev{
+	float: left;
+}
+
+.section-header{
+    text-align:center;
+}
+.site-content{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	margin-top: 35px;
+}
+.site-content a{
+	text-decoration: none;
+}
+
+.site-content h3{
+	display: inline-block;
+	background-color: #4D9BD0;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.site-content figure{
+	width: 48%;
+	float: left;
+	background-color: #fff;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+.site-content figcaption{
+	font-size: 16px;
+	color: #333;
+	padding: 3px;
+	line-height: 20px;
+}
+figure.position-right{
+	float: right;
+}
+
+.side-stories{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	margin-bottom: 55px;
+}
+.side-stories h3{
+	display: inline-block;
+	background-color: #4D9BD0;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.news-feed{
+	display: inline-block;
+	background-color: #fff;
+}
+.news-feed p{
+	width: 97%;
+	display: inline-block;
+	float:left;
+	margin-bottom: 10px;
+	margin: 5px;
+	box-shadow: 2px 2px 2px black;
+	box-sizing: border-box;
+}
+.news-feed p a{
+	color: black;
+}
+.news-feed img{
+	width: 28%;
+	float: left;
+	margin-right: 5px;
+}
+.news-feed span{
+	padding: 5px;
+	width: 70%;
+	display: inline-block;
+	float: left;
+	line-height: 20px;
+}
+
+.footer{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	background-color: #09007E;
+	margin-top: 60px;
+	text-align: center;
+}
+.footer .links{
+	margin-top: 20px;
+}
+.footer a{
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	line-height: 36px;
+	margin: 0 18px;
+}
+
+.social-icon{
+    max-width:40px;
+}
+.copyright{
+	background-color: #051034;
+	padding: 15px 0;
+	color: #fff;
+	font-size: 16px;
+    font-weight: 600;
+    font-family:'News Cycle', sans-serif;
+}

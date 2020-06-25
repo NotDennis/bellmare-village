@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Meditation Breathing App</title>
+    </head>
+
+    <body>
+        <h1> Stressed out? Just breathe </h1>
+        <br><br><br><br>
+            <div class="container" id="container">
+                <div class="circle"></div>
+                <p id="text"></p>
+                <div class="pointer-container">
+                    <span class="pointer"></span>
+                </div>
+                <div class="circleGrad"></div>
+                <div class="circleGradBackground"></div>
+            </div>
+        <br><br><br><br><br><br><br><br>
+            <audio controls loop autoplay>
+                <source src="audio/forest.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="credit">Sound from <a class="link-credit" href="https://www.Zapsplat.com">Zapsplat.com</a></p>
+        <script src="app.js"></script>
+    </body>
+</html>

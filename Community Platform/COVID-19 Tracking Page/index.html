@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 Summary Page</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="header">
+    <h1 class="title">Live COVID-19 Information Page</h1>
+    </section>
+    <br>
+    <div class="annoucement-container">
+        <p class="announcement-text"><strong>Scott's Pharmacy COVID-19 Testing</strong>  - FREE Testing is available at 9 Summerhouse Rd. Fairwood, CS 19482 during July 10th and 11th, 2020 from 10:00 am to 4:00 pm. Schedule an appointment at www.randomwebsite.com or call 1-888-194-1394 </p>
+    </div>
+    <br>
+    <h2 class="secondary-title">Updated information on the novel COVID-19 virus </h2>
+    <br>
+	<div class="data-container">
+		<div class="stats-container">
+			<h4>Total Number of Cases</h4>
+			<h1 id="numberOfCases"></h1>
+			<h4>Total Number of Deaths</h4>
+			<h1 id="deaths"></h1>
+			<h4>Percentage of Deaths</h4>
+			<h1 id="percent"></h1>
+		</div>
+		<div class="location-container">
+			<h4>Country</h4>
+			<h1 id="country">United States</h1>
+			<h4>Population</h4>
+			<h1 id="population"></h1>
+			<h4>Last Updated</h4>
+			<h1 id="update"></h1>
+		</div>
+    </div>
+    <br>
+	<h1 class="footer">Created by Dennis Koh | Statistics provided by <a href="https://systems.jhu.edu/research/public-health/ncov/">Johns Hopkins University</a> | Updates every 6 hours</h1>
+    <br><br><br>
+    <hr class="section-divider">
+    <br><br><br>
+    <div class="information">
+        <h2 class="info-text">About C<img class="covid-image2" src="images/covid.PNG">VID-19</h2>
+        <div class="three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img class="covid-image" src="images/earth.png">
+        <br>
+        <p class="covid-text">
+        The novel coronavirus (COVID-19) virus is an extremely infectious disease caused by new strain of Coronavirus.
+        <br><br>
+         Most people (mostly younger) infected with the COVID-19 virus will experience mild to moderate symptoms 
+         such as coughing, sore throat, and fever. Most often recover without requiring the use of medical treatment. 
+         However, older people, seniors, and those with pre-existing medical problems like chronic respiratory disease and/or cancer are 
+         more likely to develop serious cases than those without.
+         <br><br>
+        The most effective way to prevent and slow the spread of the virus is be informed about 
+        COVID-19, the symptons of the virus, how it spreads, and safe sanitation practices. Protect yourself and others in the Bellmare community from 
+        infection by washing your hands thoroughly and wearing a mask. Remember to limit touching one's facial features such as noses, mouths, eyes, 
+        or any other possible transmissible routes of the virus.
+        <br><br>
+        COVID-19 spreads mainly through droplets of saliva or discharge from the 
+        nose when an infected person coughs or sneezes, so it is extremely important that you practice 
+        respiratory etiquette (i.e wearing a mask when coughing) and social distancing when out in public.
+        <br><br>
+        As of today, there are no vaccines or medical treatments for the coronavirus.
+        However, many lab groups and medical facilities are in the process of developing effective treatments for this virus,
+        which includes the use of clinical trials on human subjects. 
+        The WHO and other news outlets will continue to provide updated information on the latest developments. 
+        <br><br>
+        Stay safe!
+        </p>
+        <br>
+        <div class="three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <br><br>
+        <p class="list-text">Stay informed using these links:</p>
+        <br>
+        <ul class="covid-list">
+            <li class="list-items"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" style="text-decoration: none;" target="_blank>World Health Organization COVID-19 Site</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://www.hrsa.gov/opa/COVID-19-resources" style="text-decoration: none;" target="_blank">Health Resources & Services Administration Page</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://directorsblog.nih.gov/2020/04/21/coping-with-the-collision-of-public-health-crises-covid-19-and-substance-use-disorders/" style="text-decoration: none;">National Institute of Health Mental Health Site</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://omh.ny.gov/omhweb/covid-19-resources.html" style="text-decoration: none;" target="_blank">Office of Mental Health COVID-19 Page</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://sciencejournalforkids.org/articles/how-can-we-help-stop-the-covid-19-pandemic/?gclid=CjwKCAjwrcH3BRApEiwAxjdPTQ6vAL3hNthoxqRlBYjw_te9iA6AUtqDxH4nSjdIkan6rYGlZ_vOoRoC6BkQAvD_BwE" style="text-decoration: none;" target="_blank">Science Journal For Kids</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" style="text-decoration: none;" target="_blank">CDC Coronavirus Page</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://www.nih.gov/coronavirus" style="text-decoration: none;" target="_blank">National Institute of Health COVID-19 Site</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://covid19.census.gov" style="text-decoration: none;" target="_blank">Census Bureau COVID-19 Demographics Page</a></li>
+            <br><br>
+            <li class="list-items"><a href="https://www.mayoclinic.org/diseases-conditions/coronavirus/expert-answers/can-coronavirus-spread-food-water/faq-20485479" style="text-decoration: none;" target="_blank">Mayo Clinic Coronavirus FAQ</a></li>
+        </ul>
+    </div>
+    <br>
+    <hr class="section-divider">
+    <br><br><br>
+    <div class="covid-prevention">
+        <h2 class="info-text">COVID-19 Prevention</h2>
+        <div class="three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <br>
+        <p class="covid-text">As COVID-19 is extremely infectious, it is important to practice
+            safe sanitation practices and social distancing for the safety of our village and community. <br><br>The following infographic below
+            provides more details:
+        </p>
+        <br><br><br><br>
+        <img class="infographic" src="images/infographic.png">
+        <br><br>
+        <h1 class="footer">Created by Dennis Koh | Designed using <a href="https://piktochart.com/">Piktochart</a></h1>
+        <br><br>
+        <div class="three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <br><br>
+        <a class="btn" href="#header">Back to Top</a>
+        <br><br><br>
+        <hr class="section-divider">
+    </div>
+
+    <!------Javascript------->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1500,
+            speedAsDuration: true
+        });
+    </script>
+</body>
+</html>
